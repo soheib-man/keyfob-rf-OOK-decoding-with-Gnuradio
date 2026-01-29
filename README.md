@@ -58,9 +58,7 @@ Time-domain analysis revealed clear **On-Off Keying (OOK)** modulation with dist
 
 ### 4. Bit Rate Determination
 By measuring individual bit duration:
-\[
-T_{bit} \approx 262\mu s \Rightarrow R_b = \frac{1}{T_{bit}} = 3816\ \text{bps}
-\]
+**T_bit = 262 μs → R_b = 3,816 bps**
 
 ### 5. Frame Structure Analysis
 We extracted the complete frame using OOK decoding in GNU Radio with Complex-to-Magnitude conversion.
@@ -68,10 +66,14 @@ We extracted the complete frame using OOK decoding in GNU Radio with Complex-to-
 ## 🔍 Signal Decoding Process
 
 ### Threshold Detection
-Implemented a threshold detector with:
-\[
-V_{thresh-high} = 0.02, \quad V_{thresh-low} = 0.010
-\]
+
+A threshold detector was implemented to convert the analog envelope to digital bits using hysteresis thresholds:
+
+- **Upper threshold (V_thresh-high):** 0.02
+- **Lower threshold (V_thresh-low):** 0.010
+- **Hysteresis band:** 0.01
+
+
 
 ### PWM Decoding
 Discovered PWM encoding where bit values are represented by different HIGH-state durations. To handle large files efficiently, we used:
