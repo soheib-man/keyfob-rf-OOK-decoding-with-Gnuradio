@@ -82,3 +82,25 @@ Discovered PWM encoding where bit values are represented by different HIGH-state
 2. **Burst Tagger** + **Tagged File Sink** for efficient storage
 3. Captured 6 distinct transmission frames
 
+**📊 Complete GNU Radio Flowgraph**
+Below is the complete GNU Radio flowgraph used for signal analysis and decoding. This flowgraph implements the entire signal processing chain from raw IQ data to extracted binary frames:
+
+https://docs/images/complete_flowgraph.png
+Figure X: Complete signal processing pipeline in GNU Radio Companion
+
+Flowgraph Components:
+File Source - Loads prerecorded IQ samples
+
+QT GUI Frequency Sink - Real-time spectral analysis
+
+QT GUI Time Sink - Time-domain signal visualization
+
+Complex to Magnitude - Extracts signal envelope for OOK detection
+
+Threshold Block - Converts analog signal to digital bits with hysteresis
+
+Moving Average Filter - Detects frame boundaries (10k sample window)
+
+Burst Tagger - Tags frame segments for efficient capture
+
+Tagged File Sink - Saves individual frames to separate files
