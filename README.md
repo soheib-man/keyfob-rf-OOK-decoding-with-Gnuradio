@@ -45,7 +45,7 @@ This project demonstrates the complete analysis and decoding of a garage door ke
 ### 1. Signal Acquisition & Initial Inspection
 The analysis began with loading prerecorded IQ files into GNU Radio for spectral and temporal analysis.
 
-![GNU Radio Flowgraph](docs/images/flowgraph.png)
+![GNU Radio Flowgraph](docs/images/gnu_radio_frame.png)
 
 ### 2. Frequency & Power Analysis
 Using QT GUI Frequency Sink, we confirmed the signal operates at **433.920 MHz** with energy concentration around the carrier.
