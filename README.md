@@ -6,7 +6,7 @@
 **Students:** Soheib Abbessamad Miloudi  & Ahmed Fekkai   
 **Date:** January 29, 2026
 
-[![View Full Report](https://img.shields.io/badge/📄-Full_PDF_Report-blue)](rf_challenge (3).pdf)
+[![View Full Report](https://img.shields.io/badge/📄-Full_PDF_Report-blue)](rf_challenge.pdf)
 [![GNU Radio](https://img.shields.io/badge/GNU-Radio-3C5B72?logo=gnuradio)](https://www.gnuradio.org/)
 [![Python](https://img.shields.io/badge/Python-3.13.9+-3776AB?logo=python)](https://python.org)
 
