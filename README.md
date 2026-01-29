@@ -50,7 +50,7 @@ The analysis began with loading prerecorded IQ files into GNU Radio for spectral
 ### 2. Frequency & Power Analysis
 Using QT GUI Frequency Sink, we confirmed the signal operates at **433.920 MHz** with energy concentration around the carrier.
 
-![Spectral Analysis](docs/images/spectrum.png)
+![Spectral Analysis](docs/images/spectrum_.png)
 *Figure 2: Signal spectrum at 433.92 MHz*
 
 ### 3. Modulation Identification
@@ -85,7 +85,7 @@ Discovered PWM encoding where bit values are represented by different HIGH-state
 **📊 Complete GNU Radio Flowgraph**
 Below is the complete GNU Radio flowgraph used for signal analysis and decoding. This flowgraph implements the entire signal processing chain from raw IQ data to extracted binary frames:
 
-https://docs/images/complete_flowgraph.png
+https://docs/images/flowy.png
 Figure X: Complete signal processing pipeline in GNU Radio Companion
 
 Flowgraph Components:
