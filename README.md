@@ -50,7 +50,7 @@ The analysis began with loading prerecorded IQ files into GNU Radio for spectral
 ### 2. Frequency & Power Analysis
 Using QT GUI Frequency Sink, we confirmed the signal operates at **433.920 MHz** with energy concentration around the carrier.
 
-![Spectral Analysis](docs/images/spectrum_.png)
+![Spectral Analysis](docs/images/spectrum_analysis.png)
 *Figure 2: Signal spectrum at 433.92 MHz*
 
 ### 3. Modulation Identification
